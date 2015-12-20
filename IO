@@ -1,0 +1,37 @@
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+import java.util.Date;
+import java.text.SimpleDateFormat;
+
+//读进一个状态（rod group类） 读进一个路径
+public class output {
+	public static void main(String[] args){
+		Rod_group rod_group = ;
+
+		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
+		String filename = df.format(new Date());// new Date()为获取当前系统时间
+
+		ObjectOutputStream objectoutputStream = new ObjectOutputStream(new FileOutputStream(filename+".dat"));
+	}
+}
+
+//读进一个路径 输出一个状态
+public class input {
+	public static void main(Stringp[] args){
+		String filename = ;
+		ObjectInputStream ObjectInputStream = new ObjectInputStream(new FileInputStream("filename"+".dat"));
+		Rod_group rod_group = (Rod_group)ObjectInputStream.readObject();
+		System.out.println();
+	}
+} 
+
+//用来保存状态
+public class Rod_group implements Serializable {
+	public single_rod
+	public RRR 
+	public RRP 
+}
